@@ -1,0 +1,285 @@
+@charset "iso-8859-1";
+/* CSS Document */
+html body {
+	height: 100%;
+	width: 100%;
+	margin: auto; /* to horizontally center that element*/
+	background-image: url(../images/bg8.png);
+	font-family: hind light, sans-serif;
+	color:#666;
+}
+body {
+
+}
+.header {
+	width: 100%;
+	background:none;
+	position: relative;
+}
+.container, .comments{
+	height: auto;
+	height: 100%;
+	min-height: 100%;
+}
+
+/* ----------------------- */
+/*Header*/
+.logo {	
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 100%;
+	/*height: 60px;*/
+}
+/* ----------------------- */
+/* Links**/
+.logo a:hover {
+    text-decoration: initial;}
+html a {
+	color: #efefef;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: hind light, sans-serif;
+}
+html h1 a:hover {text-decoration: none;}
+
+.navigation {
+	font-family: hind light, sans-serif;
+	padding-left: 3px;
+  	padding-right: 3px;
+  	overflow: hidden;
+}
+.navigation .navbar {
+	float: left;
+	/*background-color:#efefef;*/
+	width: 100%;
+
+}
+
+html .navbar { /**when we use the same name as open source and want to style them different, so we have to put html in front of div name**/
+	margin-bottom: 0;
+}
+.nav > li ul {
+	display: none;
+}
+.nav > li:hover ul {
+	display: block;
+	position: absolute;
+	z-index: 1000;
+	padding: 10px;
+	width: 80px;
+	color: red;
+}
+.nav > li {
+	float: left;
+	padding-right: 20px;
+	position: relative;
+}
+.nav li {
+	list-style: none;
+}
+html .dropdown-menu > li > a:hover, html .dropdown-menu > li > a:focus {
+		background-color: #DB0A5B;
+}
+html .dropdown-menu {
+	border-radius: 0;
+}
+#search, #submit {
+	float: left;
+}
+.icons {
+	display: none;
+}
+/* ----------------------- */
+/*Main*/
+.main {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background-color: #efefef;
+	clear:both;
+}
+.slide {
+	min-height: 400px;
+	clear: both;
+	
+}
+.connection {	
+	width: 100%;
+	
+}
+html .row {
+	margin-right: 0; 
+	margin-left: 0; 
+}
+
+html .no-pad, html .col-md-4 {
+	padding-right: 0;
+	padding-left: 0;
+}
+@media (min-width: 768px){
+	.no-pad .collum {
+		height: 100%;
+	}
+}
+.collum {
+	text-align: center;
+	padding-top:20px;
+}
+.collum span {
+	font-size: 22px;
+	color: #ECECEC;
+}
+.collum .buttons {
+	font-size: 12px;
+	background-color: #F89406;
+	padding: 10px;
+	border-radius: 2px;
+	color: #2C3E50;
+	width:300px;
+}
+/*project page*/
+.textinfo {
+color: #efefef;
+
+}
+.opgaveinfo {
+	padding: 0 50px; 
+	text-align: left;
+	color:#efefef;
+}
+
+/*Contact page*/
+.linkinfo {
+color: #efefef;
+}
+/* ----------------------- */
+/*Footer*/
+.footer {
+	width: 100%;
+	margin: auto;
+	background-color:;
+	color: #2C3E50;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.copyright {
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 12px;
+}
+
+.socialmedia {
+	padding-right: 20px;
+}
+.socialmedia a {
+	height: 50px;
+	color:#efefef;
+	font-size: 25px;
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.socialmedia a:hover, a:focus{
+	color: #DB0A5B;
+}
+/* -----------Mobile AND Tablet------------ */
+@media screen and (max-width: 995px) {
+/* ----------------------- */
+/*Welcome box*/
+	
+/*Nav*/
+	html .navbar-toggle {
+		display: block;
+		padding: 0;
+  		margin-top: 0;
+
+	}
+	.navbar-toggle {
+		display: block;
+		top: 0;
+		position: absolute;
+		text-align: right;
+	}
+	.navbar-toggle > ul {
+		display: none;
+		list-style: none;/*no dot in front of text*/
+	}
+	.navbar-toggle:hover > ul {
+		display: block;
+		color: #efefef;
+		padding: 5px;
+		padding-right: 25px;
+		border-radius: 3px; /*round conner*/
+		position: absolute;
+		z-index: 1000;
+		margin-left: -166px;
+	}
+	.navbar-toggle a {
+		height: 34px;
+		line-height: 35px;
+		padding: 0;
+		position: relative;
+		text-decoration: none; /*No underline*/
+		color: #ECECEC;
+		font-size: 20px;
+	}
+	.navbar-toggle a:hover {
+		color:#666;
+		text-decoration: none;
+	}
+	html .navbar-toggle:hover > a, html .navbar-toggle:focus > a, html .navbar-toggle > a:hover, html .navbar-toggle > a:focus {
+		color: #1BA39C;
+	}
+	.navigation {
+		display: none;
+	}
+/* ----------------------- */
+/*Logo*/
+	.logo {
+		padding-right: 10px;
+		margin: 0;
+		height: 120px;
+	}
+
+/* ----------------------- */
+/*Dropdown*/
+	.dropdown {
+		z-index: 99;
+		display: block;
+		background-color: #52B588;
+	}
+	.dropdown li {
+		width: 180px;
+		height: auto;
+	}
+	.dropdown li a {
+	}
+
+/*background*/
+	.slide {
+  		background-image: none;
+	}
+/* ----------------------- */
+.row_tabbable {
+	padding: 0;
+}
+html .col-md-8 {
+ padding-right: 0;
+ padding-left: 0;
+
+}
+/*Poject page*/
+
+.opgaveinfo {
+	padding: 0; 
+	text-align: left;
+}
+.lang {
+display: none;
+
+}
+
+
+
+
+	
